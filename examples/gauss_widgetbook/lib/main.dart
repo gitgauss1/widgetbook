@@ -16,46 +16,27 @@ class WidgetbookApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Widgetbook.material(
-      addons: [
-        DeviceFrameAddon(devices: Devices.ios.all),
-        AlignmentAddon(),
-      ],
       directories: [
         WidgetbookFolder(
           name: 'WidgetBook - example',
           children: [
             WidgetbookComponent(
-              name: "String Knobs",
+              name: "Knobs - example",
               useCases: [
                 WidgetbookUseCase(
-                  name: 'Example',
+                  name: 'String',
                   builder: (context) => GBStringKnobsExample(),
                 ),
-              ],
-            ),
-            WidgetbookComponent(
-              name: "Color Knobs",
-              useCases: [
                 WidgetbookUseCase(
-                  name: 'Example',
+                  name: 'Color',
                   builder: (context) => GBColorKnobsExample(),
                 ),
-              ],
-            ),
-            WidgetbookComponent(
-              name: "Bool Knobs",
-              useCases: [
                 WidgetbookUseCase(
-                  name: 'Example',
+                  name: 'Bool',
                   builder: (context) => GBBoolKnobsExample(),
                 ),
-              ],
-            ),
-            WidgetbookComponent(
-              name: "Double Knobs",
-              useCases: [
                 WidgetbookUseCase(
-                  name: 'Example',
+                  name: 'Double',
                   builder: (context) => GBDoubleKnobsExample(),
                 ),
               ],
