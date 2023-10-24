@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:gauss_widgetbook/knobs/bool_knobs.dart';
+import 'package:gauss_widgetbook/knobs/double_knobs.dart';
 import 'package:widgetbook/widgetbook.dart';
 
 import 'knobs/color_knobs.dart';
@@ -37,6 +39,24 @@ class WidgetbookApp extends StatelessWidget {
                 WidgetbookUseCase(
                   name: 'Example',
                   builder: (context) => GBColorKnobsExample(),
+                ),
+              ],
+            ),
+            WidgetbookComponent(
+              name: "Bool Knobs",
+              useCases: [
+                WidgetbookUseCase(
+                  name: 'Example',
+                  builder: (context) => GBBoolKnobsExample(),
+                ),
+              ],
+            ),
+            WidgetbookComponent(
+              name: "Double Knobs",
+              useCases: [
+                WidgetbookUseCase(
+                  name: 'Example',
+                  builder: (context) => GBDoubleKnobsExample(),
                 ),
               ],
             ),
