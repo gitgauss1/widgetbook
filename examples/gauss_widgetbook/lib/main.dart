@@ -3,6 +3,7 @@ import 'package:gauss_widgetbook/knobs/bool_knobs.dart';
 import 'package:gauss_widgetbook/knobs/date_time_knobs.dart';
 import 'package:gauss_widgetbook/knobs/double_knobs.dart';
 import 'package:gauss_widgetbook/knobs/duration_knobs.dart';
+import 'package:gauss_widgetbook/knobs/list_knobs.dart';
 import 'package:widgetbook/widgetbook.dart';
 
 import 'knobs/color_knobs.dart';
@@ -48,6 +49,10 @@ class WidgetbookApp extends StatelessWidget {
                 WidgetbookUseCase(
                   name: 'Duration',
                   builder: (context) => GBDurationKnobsExample(),
+                ),
+                WidgetbookUseCase(
+                  name: 'List',
+                  builder: (context) => GBListKnobsExample(),
                 ),
               ],
             ),
