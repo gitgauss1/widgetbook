@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:gauss_widgetbook/knobs/bool_knobs.dart';
+import 'package:gauss_widgetbook/knobs/date_time_knobs.dart';
 import 'package:gauss_widgetbook/knobs/double_knobs.dart';
+import 'package:gauss_widgetbook/knobs/duration_knobs.dart';
 import 'package:widgetbook/widgetbook.dart';
 
 import 'knobs/color_knobs.dart';
@@ -38,6 +40,14 @@ class WidgetbookApp extends StatelessWidget {
                 WidgetbookUseCase(
                   name: 'Double',
                   builder: (context) => GBDoubleKnobsExample(),
+                ),
+                WidgetbookUseCase(
+                  name: 'Date time',
+                  builder: (context) => GBDateTimeKnobsExample(),
+                ),
+                WidgetbookUseCase(
+                  name: 'Duration',
+                  builder: (context) => GBDurationKnobsExample(),
                 ),
               ],
             ),
