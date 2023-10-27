@@ -19,6 +19,18 @@ class WidgetbookApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Widgetbook.material(
+      addons: [
+        TextScaleAddon(
+          scales: [1.0, 2.0],
+        ),
+        DeviceFrameAddon(
+          devices: [
+            Devices.ios.iPhoneSE,
+            Devices.ios.iPhone12,
+            Devices.ios.iPhone13,
+          ],
+        ),
+      ],
       directories: [
         WidgetbookFolder(
           name: 'WidgetBook - example',
@@ -58,6 +70,7 @@ class WidgetbookApp extends StatelessWidget {
             ),
           ],
         ),
+        WidgetbookFolder(name: "Addons - Example", children: [])
       ],
     );
   }
